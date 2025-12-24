@@ -16,8 +16,6 @@ def sha256(data: str) -> str:
     return hashlib.sha256(data.encode()).hexdigest()
 
 
-# ---------- Merkle Tree ----------
-
 def build_merkle_root(leaves: List[str]) -> str:
     if not leaves:
         return "0"
@@ -62,8 +60,6 @@ def verify_merkle_proof(target: str, proof: List[str], root: str) -> bool:
         computed = sha256(computed + p)
     return computed == root
 
-
-# ---------- Block ----------
 
 class AuditBlock:
     def __init__(
@@ -145,8 +141,6 @@ class AuditBlock:
             block_hash=d["hash"],
         )
 
-
-# ---------- Blockchain ----------
 
 class AuditBlockchain:
     def __init__(self):

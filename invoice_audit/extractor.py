@@ -1,7 +1,7 @@
 import uuid
 
 def extract_invoice_data(file_path):
-    # Replace this with DONUT inference later
+    # Replace with DONUT inference
     return {
         "invoice_no": str(uuid.uuid4())[:8],
         "vendor": "Company A",

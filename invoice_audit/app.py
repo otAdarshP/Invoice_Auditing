@@ -29,8 +29,6 @@ def home():
         return f.read()
 
 
-# ------------------ Upload Invoice ------------------
-
 @app.post("/upload-invoice")
 async def upload_invoice(file: UploadFile = File(...)):
     path = os.path.join(UPLOAD_DIR, file.filename)
@@ -65,9 +63,6 @@ async def upload_invoice(file: UploadFile = File(...)):
         "block_hash": block.hash
     }
 
-
-# ------------------ Approve Invoice ------------------
-
 @app.post("/approve/{invoice_id}")
 def approve(invoice_id: str):
     with open(DB_FILE, "r") as f:
@@ -90,9 +85,6 @@ def approve(invoice_id: str):
 
     return {"block_hash": block.hash}
 
-
-# ------------------ Pay Invoice ------------------
-
 @app.post("/pay/{invoice_id}")
 def pay(invoice_id: str):
     with open(DB_FILE, "r") as f:
@@ -114,9 +106,6 @@ def pay(invoice_id: str):
     )
 
     return {"block_hash": block.hash}
-
-
-# ------------------ View Blockchain ------------------
 
 @app.get("/chain")
 def view_chain():
