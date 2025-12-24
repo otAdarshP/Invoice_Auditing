@@ -1,0 +1,107 @@
+[
+  {
+    "index": 0,
+    "event_type": "GENESIS",
+    "reference_id": "SYSTEM",
+    "actor": "SYSTEM",
+    "leaf_hashes": [
+      "0"
+    ],
+    "merkle_root": "0",
+    "signature": "",
+    "timestamp": 1766555669.0295224,
+    "previous_hash": "0",
+    "nonce": 28079,
+    "hash": "0000be4a2cceca6944c7c925af4947360e041220c23866b6cc28ca1ba0d6c852"
+  },
+  {
+    "index": 1,
+    "event_type": "INVOICE_UPLOADED",
+    "reference_id": "da362ef8",
+    "actor": "company_a",
+    "leaf_hashes": [
+      "a129bcd2ccbcc6e4a3235ad64f4404dd7e0fc2ee79c8c75e6dfa70b30eed804c"
+    ],
+    "merkle_root": "a129bcd2ccbcc6e4a3235ad64f4404dd7e0fc2ee79c8c75e6dfa70b30eed804c",
+    "signature": "304402204c1ac9de3080977b985278021dc2f65ef89068b62db1b1844a625d1c5c939e32022063929f4794fe9b07ae0d6b4654b51cd00f11cb6a48abf524f9fd7febcb0930b0",
+    "timestamp": 1766555688.444321,
+    "previous_hash": "0000be4a2cceca6944c7c925af4947360e041220c23866b6cc28ca1ba0d6c852",
+    "nonce": 18767,
+    "hash": "0000980bbf820cb11433d9d8bd8f0e64fec7118c89805b8164e7293c895398cc"
+  },
+  {
+    "index": 2,
+    "event_type": "PAYMENT_APPROVED",
+    "reference_id": "da362ef8",
+    "actor": "company_b",
+    "leaf_hashes": [
+      "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4"
+    ],
+    "merkle_root": "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4",
+    "signature": "3045022100f66912eda84547c729a51c0d1f6358f5868ae650fdbdaf114ba7b616847e6f2702207c67c1e6f8485ec17772c1c02245d95fef0c1a2da1a6877471c2efb728149131",
+    "timestamp": 1766555700.886503,
+    "previous_hash": "0000980bbf820cb11433d9d8bd8f0e64fec7118c89805b8164e7293c895398cc",
+    "nonce": 8341,
+    "hash": "00007cad8f6d414c45a291b780fff05d35038bc993d617537204574b60616cd1"
+  },
+  {
+    "index": 3,
+    "event_type": "PAYMENT_PROCESSED",
+    "reference_id": "da362ef8",
+    "actor": "payment_gateway",
+    "leaf_hashes": [
+      "5fc2ee6f7f8891449f0de68e0fdf49a73965359878e3ab8f44a25bf5ae319b66"
+    ],
+    "merkle_root": "5fc2ee6f7f8891449f0de68e0fdf49a73965359878e3ab8f44a25bf5ae319b66",
+    "signature": "304502201ecb24e63a87e5264b04eb90c690ace44e132830c2bd8a8fd6c81ca7d2ebda5a022100a27c856707317512e49e908358d89dc7fa423cd2fa62255f5f63d3af6ae19674",
+    "timestamp": 1766555708.2796447,
+    "previous_hash": "00007cad8f6d414c45a291b780fff05d35038bc993d617537204574b60616cd1",
+    "nonce": 35590,
+    "hash": "00005318d3ae33209325d526637642c34866a71e785c879a7db617b9eb09e3b3"
+  },
+  {
+    "index": 4,
+    "event_type": "INVOICE_UPLOADED",
+    "reference_id": "eff43c18",
+    "actor": "company_a",
+    "leaf_hashes": [
+      "e05dc108ee0c3b573a87d472334a9210f4d501b3cbfcd3c17b9cc9842a97188e"
+    ],
+    "merkle_root": "e05dc108ee0c3b573a87d472334a9210f4d501b3cbfcd3c17b9cc9842a97188e",
+    "signature": "304402204c6321221158cf327b29708de7057f2c86466f2a10eff596c218fae0541bcb3a02204a1f3ce8563ac326df8bb487ced08939d5ad4117010e5ca293997db0420f58cc",
+    "timestamp": 1766555858.880455,
+    "previous_hash": "00005318d3ae33209325d526637642c34866a71e785c879a7db617b9eb09e3b3",
+    "nonce": 48038,
+    "hash": "00007b4450c5b51e00972641fc389503552c002e210790d5b698bf943c8061d8"
+  },
+  {
+    "index": 5,
+    "event_type": "INVOICE_UPLOADED",
+    "reference_id": "39c50b37",
+    "actor": "company_a",
+    "leaf_hashes": [
+      "be641d81658ee8a1d47c2e6be69bbc5403a683d34d4593931541f49746cd1248"
+    ],
+    "merkle_root": "be641d81658ee8a1d47c2e6be69bbc5403a683d34d4593931541f49746cd1248",
+    "signature": "3045022100944edaa8388d4ad27c9655be9ce83c6f4bd8390963cb123b2f551748dc5ce62f02206bd0ed9c688455d4fba4c55dfc78f85323825b6ca78b13635312defcdf47a6f1",
+    "timestamp": 1766555862.925491,
+    "previous_hash": "00007b4450c5b51e00972641fc389503552c002e210790d5b698bf943c8061d8",
+    "nonce": 107713,
+    "hash": "00003caf72db07b0368e5a33df66f6cf36f79778308e09465bae79fe39b9060d"
+  },
+  {
+    "index": 6,
+    "event_type": "PAYMENT_APPROVED",
+    "reference_id": "da362ef8",
+    "actor": "company_b",
+    "leaf_hashes": [
+      "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4"
+    ],
+    "merkle_root": "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4",
+    "signature": "3045022056a27a918d6c888509caacccee373360a6e64c99919b79248469fe91dff15d1f022100d37b3b87db945f0ab0ef3bb3c0ce685b0a571d64906b642bbad51ef9398ee1bf",
+    "timestamp": 1766555865.5156121,
+    "previous_hash": "00003caf72db07b0368e5a33df66f6cf36f79778308e09465bae79fe39b9060d",
+    "nonce": 83932,
+    "hash": "0000b0b9ffce8ed768f051b8a5c40a6a70493050c14f1bdaecca94501eafa928"
+  }
+]

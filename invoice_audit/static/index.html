@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice Audit Ledger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    input, button {
+      margin: 6px 0;
+      padding: 6px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      max-height: 300px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Invoice Audit Ledger</h1>
+
+<hr>
+
+<h2>1. Upload Invoice</h2>
+<form id="uploadForm">
+  <input type="file" id="file" required />
+  <button type="submit">Upload</button>
+</form>
+
+<pre id="uploadResult"></pre>
+
+<hr>
+
+<h2>2. Approve Invoice</h2>
+<input id="approveId" placeholder="Invoice ID">
+<button onclick="approve()">Approve</button>
+
+<hr>
+
+<h2>3. Pay Invoice</h2>
+<input id="payId" placeholder="Invoice ID">
+<button onclick="pay()">Pay</button>
+
+<hr>
+
+<h2>Blockchain Ledger</h2>
+<button onclick="loadChain()">Refresh Chain</button>
+<pre id="chainView"></pre>
+
+<script>
+document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const fileInput = document.getElementById("file");
+
+  const formData = new FormData();
+  formData.append("file", fileInput.files[0]);
+
+  const res = await fetch("/upload-invoice", {
+    method: "POST",
+    body: formData
+  });
+
+  const data = await res.json();
+  document.getElementById("uploadResult").textContent =
+    JSON.stringify(data, null, 2);
+});
+
+async function approve() {
+  const id = document.getElementById("approveId").value;
+  const res = await fetch(`/approve/${id}`, { method: "POST" });
+  alert("Approved");
+}
+
+async function pay() {
+  const id = document.getElementById("payId").value;
+  const res = await fetch(`/pay/${id}`, { method: "POST" });
+  alert("Paid");
+}
+
+async function loadChain() {
+  const res = await fetch("/chain");
+  const data = await res.json();
+  document.getElementById("chainView").textContent =
+    JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+</html>

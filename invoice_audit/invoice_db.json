@@ -1,0 +1,32 @@
+{
+  "da362ef8": {
+    "data": {
+      "invoice_no": "da362ef8",
+      "vendor": "Company A",
+      "amount": 125000,
+      "currency": "INR",
+      "date": "2025-03-01"
+    },
+    "status": "APPROVED"
+  },
+  "eff43c18": {
+    "data": {
+      "invoice_no": "eff43c18",
+      "vendor": "Company A",
+      "amount": 125000,
+      "currency": "INR",
+      "date": "2025-03-01"
+    },
+    "status": "UPLOADED"
+  },
+  "39c50b37": {
+    "data": {
+      "invoice_no": "39c50b37",
+      "vendor": "Company A",
+      "amount": 125000,
+      "currency": "INR",
+      "date": "2025-03-01"
+    },
+    "status": "UPLOADED"
+  }
+}
