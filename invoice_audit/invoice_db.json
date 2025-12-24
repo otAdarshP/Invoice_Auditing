@@ -28,5 +28,15 @@
       "date": "2025-03-01"
     },
     "status": "UPLOADED"
+  },
+  "10e439b6": {
+    "data": {
+      "invoice_no": "10e439b6",
+      "vendor": "Company A",
+      "amount": 125000,
+      "currency": "INR",
+      "date": "2025-03-01"
+    },
+    "status": "PAID"
   }
 }

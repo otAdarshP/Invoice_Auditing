@@ -103,5 +103,50 @@
     "previous_hash": "00003caf72db07b0368e5a33df66f6cf36f79778308e09465bae79fe39b9060d",
     "nonce": 83932,
     "hash": "0000b0b9ffce8ed768f051b8a5c40a6a70493050c14f1bdaecca94501eafa928"
+  },
+  {
+    "index": 7,
+    "event_type": "INVOICE_UPLOADED",
+    "reference_id": "10e439b6",
+    "actor": "company_a",
+    "leaf_hashes": [
+      "3052e0c0bd4f81c170b8eae4dbff1046f6e163b3d6517a671bca2ea5adbf9de7"
+    ],
+    "merkle_root": "3052e0c0bd4f81c170b8eae4dbff1046f6e163b3d6517a671bca2ea5adbf9de7",
+    "signature": "304502204ff2a754c1991c6f62f588d4984fb747bb667b57ad10eaf0295edb410d87c896022100dab811e91ce84684ac8cac7375acc4923243b351cb9fa8c086ceb72733f45f0a",
+    "timestamp": 1766596191.5035038,
+    "previous_hash": "0000b0b9ffce8ed768f051b8a5c40a6a70493050c14f1bdaecca94501eafa928",
+    "nonce": 5908,
+    "hash": "0000d738486637401aa11434d453d945dbc8ebf09fa7c12d29c6d40ed9ed0a57"
+  },
+  {
+    "index": 8,
+    "event_type": "PAYMENT_APPROVED",
+    "reference_id": "10e439b6",
+    "actor": "company_b",
+    "leaf_hashes": [
+      "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4"
+    ],
+    "merkle_root": "1c76423c677a424565d9b07d930bf26738b9763cf9f6e3fe694176164f47d2d4",
+    "signature": "3045022100b93b34aa61b490f8d4b1227905e1a9ae3076dd24fbc3b29b85329958ceea7476022046c3941f5a633e888677fea779ca604bf219e598933e2ada11f9ef6361ca7823",
+    "timestamp": 1766596202.200668,
+    "previous_hash": "0000d738486637401aa11434d453d945dbc8ebf09fa7c12d29c6d40ed9ed0a57",
+    "nonce": 109791,
+    "hash": "0000022bb45fa7d2a70b870756ddc32bb4d84d84ba40e0ae7b632c758601579b"
+  },
+  {
+    "index": 9,
+    "event_type": "PAYMENT_PROCESSED",
+    "reference_id": "10e439b6",
+    "actor": "payment_gateway",
+    "leaf_hashes": [
+      "5fc2ee6f7f8891449f0de68e0fdf49a73965359878e3ab8f44a25bf5ae319b66"
+    ],
+    "merkle_root": "5fc2ee6f7f8891449f0de68e0fdf49a73965359878e3ab8f44a25bf5ae319b66",
+    "signature": "30440220484d57d82224a44e4ad84a3d55ed4681a633a984ec0562628fa92916dddd7ca40220591f666443462315b016878ee865f5a957982797a747b36deb578872cb535533",
+    "timestamp": 1766596210.9525604,
+    "previous_hash": "0000022bb45fa7d2a70b870756ddc32bb4d84d84ba40e0ae7b632c758601579b",
+    "nonce": 10478,
+    "hash": "00009119ae55e6283aa02efcc43ce798afd160f1266661dec50e5c9e4fb7cf3b"
   }
 ]
